@@ -50,13 +50,13 @@ metadata_extractor/
     python examples/run_extractor.py
 
 
-**🧪 Run Unit Tests**
+## 🧪 Run Unit Tests
 
     pytest
 
 This will run tests/test_extractor.py, which uses an in-memory SQLite database to validate that schema extraction works correctly.
 
-**Sample Output**
+## Sample Output
 
 [
   {
@@ -76,7 +76,7 @@ This will run tests/test_extractor.py, which uses an in-memory SQLite database t
 ]
 
 
-**Notes**
+## Notes
 
 The examples/ folder contains demo scripts for testing and local development. These are not required in production but are helpful for understanding and validating the library.
 
