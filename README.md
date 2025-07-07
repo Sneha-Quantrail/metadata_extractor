@@ -7,22 +7,17 @@ This Python library scans any SQL-compatible database and extracts its full sche
 
     Quantrail-Data/
     └── metadata_extractor/
-        ├── metadata_extractor/              ← Main package
-        │   ├── __init__.py                  
-        │   ├── extractor.py                 ← Main schema extractor library
-        │
-        ├── tests/                           ← Unit tests
-        │   ├── __init__.py                  
-        │   └── test_extractor.py            ← Contains the test case
-        │
-        ├── examples/                        ← Example scripts (Optional)
-        │   ├── __init__.py                  
-        │   ├── run_extractor.py             ← Demo script
-        │   └── create_sample_db.py          ← For generating sample SQLite DB
-        │
-        ├── requirements.txt                ← List of required packages
-        ├── README.md                       ← Project documentation
- 
+    ├── create_sample_db.py         # Creates sample SQLite DB
+    ├── run_extractor.py            # Script to run schema extractor
+    ├── sample.db                   # Example SQLite DB (optional)
+    ├── requirements.txt            # Project dependencies
+    ├── README.md                   # Project documentation
+    ├── metadata_extractor/
+    │ ├── init.py
+    │ └── extractor.py              # Core schema extraction logic
+    ├── tests/
+    │ ├── init.py
+    │ └── test_extractor.py         # Pytest unit test
 
 
 ## ✅ Features
@@ -45,22 +40,31 @@ This Python library scans any SQL-compatible database and extracts its full sche
     git clone https://github.com/Sneha-Quantrail/metadata_extractor.git
     cd metadata_extractor
 
-2. **Install dependencies**
+2. **Create a virtual environment**
+
+    python -m venv venv
+
+3. **Activate it in Powershell**
+   
+    .\venv\Scripts\Activate.ps1
+
+4. **Install dependencies**
 
     pip install -r requirements.txt
 
-3. **(Optional) Create a sample database for testing**
+5. **(Optional) Create a sample database for testing**
 
-    python examples/create_sample_db.py
+    python create_sample_db.py
 
-4. **Run the extractor to view schema**
+6. **Run the extractor to view schema**
 
-    python examples/run_extractor.py
+    python run_extractor.py
    
 
 ## 🧪 Unit Testing
 
 This project includes unit testing using pytest.
+
 The test validates:
 
 ✅ Database connection using SQLite
@@ -103,6 +107,6 @@ This will run tests/test_extractor.py, which uses an in-memory SQLite database t
 
 ## Notes
 
-The examples/ folder contains demo scripts for testing and local development. These are not required in production but are helpful for understanding and validating the library.
+The 'create_sample_db.py' and 'run_extractor.py' are demo scripts for testing and local development. These are not required in production but are helpful for understanding and validating the library.
 
 You can extend the extractor to support PostgreSQL, MySQL, etc., by changing the db_url in the scripts.
