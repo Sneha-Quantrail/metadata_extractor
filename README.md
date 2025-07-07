@@ -5,23 +5,23 @@ This Python library scans any SQL-compatible database and extracts its full sche
 
 ## 📁 Project Structure
 
-Quantrail-Data/
-└── metadata_extractor/
-    ├── metadata_extractor/              ← Main package
-    │   ├── __init__.py                  
-    │   ├── extractor.py                 ← Main schema extractor library
-    │
-    ├── tests/                           ← Unit tests
-    │   ├── __init__.py                  
-    │   └── test_extractor.py            ← Contains the test case
-    │
-    ├── examples/                        ← Example scripts (Optional)
-    │   ├── __init__.py                  
-    │   ├── run_extractor.py             ← Demo script
-    │   └── create_sample_db.py          ← For generating sample SQLite DB
-    │
-    ├── requirements.txt                ← List of required packages
-    ├── README.md                       ← Project documentation
+    Quantrail-Data/
+    └── metadata_extractor/
+        ├── metadata_extractor/              ← Main package
+        │   ├── __init__.py                  
+        │   ├── extractor.py                 ← Main schema extractor library
+        │
+        ├── tests/                           ← Unit tests
+        │   ├── __init__.py                  
+        │   └── test_extractor.py            ← Contains the test case
+        │
+        ├── examples/                        ← Example scripts (Optional)
+        │   ├── __init__.py                  
+        │   ├── run_extractor.py             ← Demo script
+        │   └── create_sample_db.py          ← For generating sample SQLite DB
+        │
+        ├── requirements.txt                ← List of required packages
+        ├── README.md                       ← Project documentation
 
 
 Quantrail-Data/
