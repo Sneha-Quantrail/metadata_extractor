@@ -48,6 +48,22 @@ metadata_extractor/
 4. **Run the extractor to view schema**
 
     python examples/run_extractor.py
+   
+
+## 🧪 Unit Testing
+
+This project includes unit testing using pytest.
+The test validates:
+
+✅ Database connection using SQLite
+
+✅ Schema extraction for tables, primary keys, and foreign key relationships
+
+✅ Output structure format (list of schema dictionaries)
+
+✅ Association mapping between related tables
+
+✅ Cleanup of test database file (Windows-safe)
 
 
 ## 🧪 Run Unit Tests
@@ -55,6 +71,7 @@ metadata_extractor/
     pytest
 
 This will run tests/test_extractor.py, which uses an in-memory SQLite database to validate that schema extraction works correctly.
+
 
 ## Sample Output
 
