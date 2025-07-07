@@ -34,7 +34,7 @@ metadata_extractor/
 
 1. **Clone the repo**
 
-    git clone https://github.com/your-username/metadata_extractor.git
+    git clone https://github.com/Sneha-Quantrail/metadata_extractor.git
     cd metadata_extractor
 
 2. **Install dependencies**
