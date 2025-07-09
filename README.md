@@ -6,15 +6,16 @@ This Python library scans any SQL-compatible database and extracts its full sche
 ## Project Structure
 
     metadata_extractor/
+    ├── create_sample_db.py # Creates sample SQLite DB
+    ├── run_extractor.py # Script to run schema extractor
+    ├── sample.db # Example SQLite DB (optional)
+    ├── requirements.txt # Project dependencies
     ├── metadata_extractor/
-    │ └── extractor.py # Main library: schema extractor
+    │ ├── init.py
+    │ └── extractor.py # Core schema extraction logic
     ├── tests/
-    │ └── test_extractor.py # Unit tests using pytest
-    ├── examples/
-    │ ├── create_sample_db.py # Creates a sample SQLite database
-    │ └── run_extractor.py # Demo script to run schema extractor
-    ├── requirements.txt # Required dependencies
-    └── README.md # Project overview (this file)
+    │ ├── init.py
+    │ └── test_extractor.py # Pytest unit test
 
 
 ## How to Set Up
@@ -22,19 +23,30 @@ This Python library scans any SQL-compatible database and extracts its full sche
 1. **Clone the repo**
 
     git clone https://github.com/Sneha-Quantrail/metadata_extractor.git
+
     cd metadata_extractor
 
-2. **Install dependencies**
+2. **Create a Virtual Environment**
+
+    python -m venv venv
+
+3. **Activate it**
+
+    .\venv\Scripts\Activate.ps1
+
+
+4. **Install dependencies**
 
     pip install -r requirements.txt
 
-3. **(Optional) Create a sample database for testing**
 
-    python examples/create_sample_db.py
+5. **(Optional) Create a sample database for testing**
 
-4. **Run the extractor to view schema**
+    python create_sample_db.py
 
-    python examples/run_extractor.py
+6. **Run the extractor to view schema**
+
+    python run_extractor.py
 
 
 # Run Unit Tests
@@ -65,6 +77,4 @@ This will run tests/test_extractor.py, which uses an in-memory SQLite database t
 
 # Notes
 
-The examples/ folder contains demo scripts for testing and local development. These are not required in production but are helpful for understanding and validating the library.
-
-You can extend the extractor to support PostgreSQL, MySQL, etc., by changing the db_url in the scripts.
+create_sample_db.py and run_extractor.py are provided as demo scripts for local testing. These are not mandatory in production but useful for local validation.
