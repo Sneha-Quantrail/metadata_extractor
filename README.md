@@ -5,16 +5,16 @@ This Python library scans any SQL-compatible database and extracts its full sche
 
 ## Project Structure
 
-metadata_extractor/
-├── metadata_extractor/
-│ └── extractor.py # Main library: schema extractor
-├── tests/
-│ └── test_extractor.py # Unit tests using pytest
-├── examples/
-│ ├── create_sample_db.py # Creates a sample SQLite database
-│ └── run_extractor.py # Demo script to run schema extractor
-├── requirements.txt # Required dependencies
-└── README.md # Project overview (this file)
+    metadata_extractor/
+    ├── metadata_extractor/
+    │ └── extractor.py # Main library: schema extractor
+    ├── tests/
+    │ └── test_extractor.py # Unit tests using pytest
+    ├── examples/
+    │ ├── create_sample_db.py # Creates a sample SQLite database
+    │ └── run_extractor.py # Demo script to run schema extractor
+    ├── requirements.txt # Required dependencies
+    └── README.md # Project overview (this file)
 
 
 ## How to Set Up
