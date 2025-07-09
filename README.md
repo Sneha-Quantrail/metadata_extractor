@@ -1,9 +1,9 @@
-# 📦 Metadata Extractor
+# Metadata Extractor
 
 This Python library scans any SQL-compatible database and extracts its full schema — including tables, columns, primary keys, foreign keys, and DDLs — in a structured JSON format.
 
 
-## 📁 Project Structure
+## Project Structure
 
 metadata_extractor/
 ├── metadata_extractor/
@@ -17,20 +17,7 @@ metadata_extractor/
 └── README.md # Project overview (this file)
 
 
-## ✅ Features
-
-- Supports any SQLAlchemy-compatible database (e.g., SQLite, PostgreSQL, MySQL)
-- Extracts:
-  - Table names
-  - DDL statements (e.g., `CREATE TABLE ...`)
-  - Primary keys
-  - Foreign key relationships
-  - Associated tables
-- Outputs schema as clean, structured JSON
-- Includes unit tests using `pytest`
-
-
-## 🛠️ How to Set Up
+## How to Set Up
 
 1. **Clone the repo**
 
@@ -50,7 +37,7 @@ metadata_extractor/
     python examples/run_extractor.py
 
 
-**🧪 Run Unit Tests**
+**Run Unit Tests**
 
     pytest
 
